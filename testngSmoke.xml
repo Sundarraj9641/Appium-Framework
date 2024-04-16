@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+
+	<groups>
+		<run>
+			<include name="Smoke"></include>
+		</run>
+	</groups>
+	
+	<listeners>
+		<listener class-name="com.appiumtesting.baseclass.Listeners" />
+	</listeners>
+
+	<test thread-count="5" name="Login Form">
+		<classes>
+			<class name="com.appiumtesting.Form" />
+		</classes>
+	</test>
+
+	<test thread-count="5" name="Add to Cart">
+		<classes>
+			<class name="com.appiumtesting.AddToCart" />
+		</classes>
+	</test>
+
+	<test thread-count="5" name="Validation">
+		<classes>
+			<class name="com.appiumtesting.ValidatePrice" />
+		</classes>
+	</test>
+
+	<test thread-count="5" name="Data provider">
+		<classes>
+			<class name="com.appiumtesting.DataProviderDemo" />
+		</classes>
+	</test>
+
+	<test thread-count="5" name="Data from Json">
+		<classes>
+			<class name="com.appiumtesting.DataFromJson" />
+		</classes>
+	</test>
+
+
+</suite> <!--
+Suite -->

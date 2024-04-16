@@ -1,0 +1,436 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="7" passed="4" failed="2" skipped="1">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-04-16T11:56:52 IST" name="Suite" finished-at="2024-04-16T12:03:35 IST" duration-ms="403738">
+    <groups>
+      <group name="Smoke">
+        <method signature="Form.formPage()[pri:0, instance:com.appiumtesting.Form@66c61024]" name="formPage" class="com.appiumtesting.Form"/>
+      </group> <!-- Smoke -->
+    </groups>
+    <test started-at="2024-04-16T11:56:52 IST" name="Login Form" finished-at="2024-04-16T11:57:12 IST" duration-ms="20595">
+      <class name="com.appiumtesting.Form">
+        <test-method is-config="true" signature="appiumSetUp()[pri:0, instance:com.appiumtesting.Form@66c61024]" started-at="2024-04-16T11:56:52 IST" name="appiumSetUp" finished-at="2024-04-16T11:57:12 IST" duration-ms="20460" status="FAIL">
+          <exception class="io.appium.java_client.service.local.AppiumServerHasNotBeenStartedLocallyException">
+            <message>
+              <![CDATA[Appium HTTP server is not listening at http://127.0.0.1:4723/ after 20000 ms timeout. Consider increasing the server startup timeout value and check the server log for possible error messages occurrences.
+Node.js executable path: C:\Program Files\nodejs\node.exe
+Arguments: [C:\Users\SUMAHALI\AppData\Roaming\npm\node_modules\appium\build\lib\main.js, --port, 4723, --address, 127.0.0.1]
+Server log: [35m[Appium][39m Welcome to Appium v2.5.1
+[35m[Appium][39m Non-default server args:
+[35m[Appium][39m { address: [32m'127.0.0.1'[39m }
+[35m[Appium][39m The autodetected Appium home path: C:\Users\SUMAHALI
+[35m[Appium][39m Attempting to load driver uiautomator2...
+[35m[Appium][39m Attempting to load driver chromium...
+[35m[Appium][39m Requiring driver at C:\Users\SUMAHALI\node_modules\appium-uiautomator2-driver\build\index.js
+[35m[Appium][39m Requiring driver at C:\Users\SUMAHALI\node_modules\appium-chromium-driver\index.js
+]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[io.appium.java_client.service.local.AppiumServerHasNotBeenStartedLocallyException: Appium HTTP server is not listening at http://127.0.0.1:4723/ after 20000 ms timeout. Consider increasing the server startup timeout value and check the server log for possible error messages occurrences.
+Node.js executable path: C:\Program Files\nodejs\node.exe
+Arguments: [C:\Users\SUMAHALI\AppData\Roaming\npm\node_modules\appium\build\lib\main.js, --port, 4723, --address, 127.0.0.1]
+Server log: [35m[Appium][39m Welcome to Appium v2.5.1
+[35m[Appium][39m Non-default server args:
+[35m[Appium][39m { address: [32m'127.0.0.1'[39m }
+[35m[Appium][39m The autodetected Appium home path: C:\Users\SUMAHALI
+[35m[Appium][39m Attempting to load driver uiautomator2...
+[35m[Appium][39m Attempting to load driver chromium...
+[35m[Appium][39m Requiring driver at C:\Users\SUMAHALI\node_modules\appium-uiautomator2-driver\build\index.js
+[35m[Appium][39m Requiring driver at C:\Users\SUMAHALI\node_modules\appium-chromium-driver\index.js
+
+at io.appium.java_client.service.local.AppiumDriverLocalService.start(AppiumDriverLocalService.java:192)
+at com.appiumtesting.utils.AppiumUtils.startAppiumServer(AppiumUtils.java:33)
+at com.appiumtesting.baseclass.Configurations.appiumSetUp(Configurations.java:44)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
+at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:176)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:122)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: io.appium.java_client.service.local.AppiumServerAvailabilityChecker$ConnectionTimeout: ConnectionTimeout
+at io.appium.java_client.service.local.AppiumServerAvailabilityChecker.waitUntilAvailable(AppiumServerAvailabilityChecker.java:72)
+at io.appium.java_client.service.local.AppiumDriverLocalService.ping(AppiumDriverLocalService.java:144)
+at io.appium.java_client.service.local.AppiumDriverLocalService.start(AppiumDriverLocalService.java:185)
+... 28 more
+Caused by: java.net.ConnectException: Connection refused: no further information
+at java.base/sun.nio.ch.Net.pollConnect(Native Method)
+at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:672)
+at java.base/sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:542)
+at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:597)
+at java.base/java.net.Socket.connect(Socket.java:633)
+at java.base/sun.net.NetworkClient.doConnect(NetworkClient.java:178)
+at java.base/sun.net.www.http.HttpClient.openServer(HttpClient.java:531)
+at java.base/sun.net.www.http.HttpClient.openServer(HttpClient.java:636)
+at java.base/sun.net.www.http.HttpClient.<init>(HttpClient.java:279)
+at java.base/sun.net.www.http.HttpClient.New(HttpClient.java:384)
+at java.base/sun.net.www.http.HttpClient.New(HttpClient.java:406)
+at java.base/sun.net.www.protocol.http.HttpURLConnection.getNewHttpClient(HttpURLConnection.java:1309)
+at java.base/sun.net.www.protocol.http.HttpURLConnection.plainConnect0(HttpURLConnection.java:1242)
+at java.base/sun.net.www.protocol.http.HttpURLConnection.plainConnect(HttpURLConnection.java:1128)
+at java.base/sun.net.www.protocol.http.HttpURLConnection.connect(HttpURLConnection.java:1057)
+at io.appium.java_client.service.local.AppiumServerAvailabilityChecker.connectToUrl(AppiumServerAvailabilityChecker.java:79)
+at io.appium.java_client.service.local.AppiumServerAvailabilityChecker.waitUntilAvailable(AppiumServerAvailabilityChecker.java:61)
+... 30 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- io.appium.java_client.service.local.AppiumServerHasNotBeenStartedLocallyException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- appiumSetUp -->
+        <test-method signature="formPage()[pri:0, instance:com.appiumtesting.Form@66c61024]" started-at="2024-04-16T11:57:12 IST" name="formPage" finished-at="2024-04-16T11:57:12 IST" duration-ms="0" status="SKIP">
+          <exception class="io.appium.java_client.service.local.AppiumServerHasNotBeenStartedLocallyException">
+            <message>
+              <![CDATA[Appium HTTP server is not listening at http://127.0.0.1:4723/ after 20000 ms timeout. Consider increasing the server startup timeout value and check the server log for possible error messages occurrences.
+Node.js executable path: C:\Program Files\nodejs\node.exe
+Arguments: [C:\Users\SUMAHALI\AppData\Roaming\npm\node_modules\appium\build\lib\main.js, --port, 4723, --address, 127.0.0.1]
+Server log: [35m[Appium][39m Welcome to Appium v2.5.1
+[35m[Appium][39m Non-default server args:
+[35m[Appium][39m { address: [32m'127.0.0.1'[39m }
+[35m[Appium][39m The autodetected Appium home path: C:\Users\SUMAHALI
+[35m[Appium][39m Attempting to load driver uiautomator2...
+[35m[Appium][39m Attempting to load driver chromium...
+[35m[Appium][39m Requiring driver at C:\Users\SUMAHALI\node_modules\appium-uiautomator2-driver\build\index.js
+[35m[Appium][39m Requiring driver at C:\Users\SUMAHALI\node_modules\appium-chromium-driver\index.js
+]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[io.appium.java_client.service.local.AppiumServerHasNotBeenStartedLocallyException: Appium HTTP server is not listening at http://127.0.0.1:4723/ after 20000 ms timeout. Consider increasing the server startup timeout value and check the server log for possible error messages occurrences.
+Node.js executable path: C:\Program Files\nodejs\node.exe
+Arguments: [C:\Users\SUMAHALI\AppData\Roaming\npm\node_modules\appium\build\lib\main.js, --port, 4723, --address, 127.0.0.1]
+Server log: [35m[Appium][39m Welcome to Appium v2.5.1
+[35m[Appium][39m Non-default server args:
+[35m[Appium][39m { address: [32m'127.0.0.1'[39m }
+[35m[Appium][39m The autodetected Appium home path: C:\Users\SUMAHALI
+[35m[Appium][39m Attempting to load driver uiautomator2...
+[35m[Appium][39m Attempting to load driver chromium...
+[35m[Appium][39m Requiring driver at C:\Users\SUMAHALI\node_modules\appium-uiautomator2-driver\build\index.js
+[35m[Appium][39m Requiring driver at C:\Users\SUMAHALI\node_modules\appium-chromium-driver\index.js
+
+at io.appium.java_client.service.local.AppiumDriverLocalService.start(AppiumDriverLocalService.java:192)
+at com.appiumtesting.utils.AppiumUtils.startAppiumServer(AppiumUtils.java:33)
+at com.appiumtesting.baseclass.Configurations.appiumSetUp(Configurations.java:44)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
+at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:176)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:122)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: io.appium.java_client.service.local.AppiumServerAvailabilityChecker$ConnectionTimeout: ConnectionTimeout
+at io.appium.java_client.service.local.AppiumServerAvailabilityChecker.waitUntilAvailable(AppiumServerAvailabilityChecker.java:72)
+at io.appium.java_client.service.local.AppiumDriverLocalService.ping(AppiumDriverLocalService.java:144)
+at io.appium.java_client.service.local.AppiumDriverLocalService.start(AppiumDriverLocalService.java:185)
+... 28 more
+Caused by: java.net.ConnectException: Connection refused: no further information
+at java.base/sun.nio.ch.Net.pollConnect(Native Method)
+at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:672)
+at java.base/sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:542)
+at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:597)
+at java.base/java.net.Socket.connect(Socket.java:633)
+at java.base/sun.net.NetworkClient.doConnect(NetworkClient.java:178)
+at java.base/sun.net.www.http.HttpClient.openServer(HttpClient.java:531)
+at java.base/sun.net.www.http.HttpClient.openServer(HttpClient.java:636)
+at java.base/sun.net.www.http.HttpClient.<init>(HttpClient.java:279)
+at java.base/sun.net.www.http.HttpClient.New(HttpClient.java:384)
+at java.base/sun.net.www.http.HttpClient.New(HttpClient.java:406)
+at java.base/sun.net.www.protocol.http.HttpURLConnection.getNewHttpClient(HttpURLConnection.java:1309)
+at java.base/sun.net.www.protocol.http.HttpURLConnection.plainConnect0(HttpURLConnection.java:1242)
+at java.base/sun.net.www.protocol.http.HttpURLConnection.plainConnect(HttpURLConnection.java:1128)
+at java.base/sun.net.www.protocol.http.HttpURLConnection.connect(HttpURLConnection.java:1057)
+at io.appium.java_client.service.local.AppiumServerAvailabilityChecker.connectToUrl(AppiumServerAvailabilityChecker.java:79)
+at io.appium.java_client.service.local.AppiumServerAvailabilityChecker.waitUntilAvailable(AppiumServerAvailabilityChecker.java:61)
+... 30 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- io.appium.java_client.service.local.AppiumServerHasNotBeenStartedLocallyException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- formPage -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.appiumtesting.Form@66c61024]" started-at="2024-04-16T11:57:12 IST" name="tearDown" finished-at="2024-04-16T11:57:12 IST" duration-ms="1" status="FAIL">
+          <exception class="java.lang.NullPointerException">
+            <message>
+              <![CDATA[Cannot invoke "io.appium.java_client.android.AndroidDriver.quit()" because "this.driver" is null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException: Cannot invoke "io.appium.java_client.android.AndroidDriver.quit()" because "this.driver" is null
+at com.appiumtesting.baseclass.Configurations.tearDown(Configurations.java:70)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
+at org.testng.internal.TestMethodWorker.invokeAfterClassMethods(TestMethodWorker.java:217)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:130)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.appiumtesting.Form -->
+    </test> <!-- Login Form -->
+    <test started-at="2024-04-16T11:57:13 IST" name="Add to Cart" finished-at="2024-04-16T11:59:08 IST" duration-ms="114477">
+      <class name="com.appiumtesting.AddToCart">
+        <test-method is-config="true" signature="appiumSetUp()[pri:0, instance:com.appiumtesting.AddToCart@d62fe5b]" started-at="2024-04-16T11:57:13 IST" name="appiumSetUp" finished-at="2024-04-16T11:57:54 IST" duration-ms="40719" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- appiumSetUp -->
+        <test-method signature="addTheProductToCart()[pri:0, instance:com.appiumtesting.AddToCart@d62fe5b]" started-at="2024-04-16T11:57:54 IST" name="addTheProductToCart" finished-at="2024-04-16T11:59:04 IST" duration-ms="69712" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addTheProductToCart -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.appiumtesting.AddToCart@d62fe5b]" started-at="2024-04-16T11:59:04 IST" name="tearDown" finished-at="2024-04-16T11:59:08 IST" duration-ms="4029" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.appiumtesting.AddToCart -->
+    </test> <!-- Add to Cart -->
+    <test started-at="2024-04-16T11:59:08 IST" name="Validation" finished-at="2024-04-16T12:00:40 IST" duration-ms="91984">
+      <class name="com.appiumtesting.ValidatePrice">
+        <test-method is-config="true" signature="appiumSetUp()[pri:0, instance:com.appiumtesting.ValidatePrice@31c7528f]" started-at="2024-04-16T11:59:08 IST" name="appiumSetUp" finished-at="2024-04-16T11:59:40 IST" duration-ms="32614" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- appiumSetUp -->
+        <test-method signature="validateTotalPrice()[pri:0, instance:com.appiumtesting.ValidatePrice@31c7528f]" started-at="2024-04-16T11:59:40 IST" name="validateTotalPrice" finished-at="2024-04-16T12:00:36 IST" duration-ms="55351" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateTotalPrice -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.appiumtesting.ValidatePrice@31c7528f]" started-at="2024-04-16T12:00:36 IST" name="tearDown" finished-at="2024-04-16T12:00:40 IST" duration-ms="4014" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.appiumtesting.ValidatePrice -->
+    </test> <!-- Validation -->
+    <test started-at="2024-04-16T12:00:40 IST" name="Data provider" finished-at="2024-04-16T12:02:57 IST" duration-ms="137242">
+      <class name="com.appiumtesting.DataProviderDemo">
+        <test-method is-config="true" signature="appiumSetUp()[pri:0, instance:com.appiumtesting.DataProviderDemo@1a20270e]" started-at="2024-04-16T12:00:40 IST" name="appiumSetUp" finished-at="2024-04-16T12:01:13 IST" duration-ms="33207" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- appiumSetUp -->
+        <test-method signature="formPageUsingDataProvider(java.lang.String,java.lang.String)[pri:0, instance:com.appiumtesting.DataProviderDemo@1a20270e]" started-at="2024-04-16T12:01:13 IST" name="formPageUsingDataProvider" data-provider="getData" finished-at="2024-04-16T12:02:02 IST" duration-ms="49097" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[India]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Sundar]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- formPageUsingDataProvider -->
+        <test-method is-config="true" signature="backToForm()[pri:0, instance:com.appiumtesting.DataProviderDemo@1a20270e]" started-at="2024-04-16T12:02:02 IST" name="backToForm" finished-at="2024-04-16T12:02:03 IST" duration-ms="1237" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- backToForm -->
+        <test-method signature="formPageUsingDataProvider(java.lang.String,java.lang.String)[pri:0, instance:com.appiumtesting.DataProviderDemo@1a20270e]" started-at="2024-04-16T12:02:03 IST" name="formPageUsingDataProvider" data-provider="getData" finished-at="2024-04-16T12:02:52 IST" duration-ms="48993" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Benin]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Raj]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- formPageUsingDataProvider -->
+        <test-method is-config="true" signature="backToForm()[pri:0, instance:com.appiumtesting.DataProviderDemo@1a20270e]" started-at="2024-04-16T12:02:52 IST" name="backToForm" finished-at="2024-04-16T12:02:54 IST" duration-ms="1134" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- backToForm -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.appiumtesting.DataProviderDemo@1a20270e]" started-at="2024-04-16T12:02:54 IST" name="tearDown" finished-at="2024-04-16T12:02:57 IST" duration-ms="3555" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.appiumtesting.DataProviderDemo -->
+    </test> <!-- Data provider -->
+    <test started-at="2024-04-16T12:02:57 IST" name="Data from Json" finished-at="2024-04-16T12:03:35 IST" duration-ms="38178">
+      <class name="com.appiumtesting.DataFromJson">
+        <test-method is-config="true" signature="appiumSetUp()[pri:0, instance:com.appiumtesting.DataFromJson@52c3cb31]" started-at="2024-04-16T12:02:57 IST" name="appiumSetUp" finished-at="2024-04-16T12:03:30 IST" duration-ms="33177" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- appiumSetUp -->
+        <test-method signature="formPageUsingDataProvider(java.util.HashMap)[pri:0, instance:com.appiumtesting.DataFromJson@52c3cb31]" started-at="2024-04-16T12:03:31 IST" name="formPageUsingDataProvider" data-provider="getData" finished-at="2024-04-16T12:03:31 IST" duration-ms="2" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{name=Sundarraj, country=Benin}]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.NullPointerException">
+            <message>
+              <![CDATA[The provided search context cannot be null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException: The provided search context cannot be null
+at com.google.common.base.Preconditions.checkNotNull(Preconditions.java:924)
+at io.appium.java_client.pagefactory.AppiumFieldDecorator.requireWebDriverReference(AppiumFieldDecorator.java:129)
+at io.appium.java_client.pagefactory.AppiumFieldDecorator.<init>(AppiumFieldDecorator.java:86)
+at io.appium.java_client.pagefactory.AppiumFieldDecorator.<init>(AppiumFieldDecorator.java:100)
+at com.appiumtesting.pageobject.FormPageObject.<init>(FormPageObject.java:24)
+at com.appiumtesting.DataFromJson.formPageUsingDataProvider(DataFromJson.java:22)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- formPageUsingDataProvider -->
+        <test-method signature="formPageUsingDataProvider(java.util.HashMap)[pri:0, instance:com.appiumtesting.DataFromJson@52c3cb31]" started-at="2024-04-16T12:03:32 IST" name="formPageUsingDataProvider" data-provider="getData" finished-at="2024-04-16T12:03:32 IST" duration-ms="2" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{name=Karthik, country=India}]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.NullPointerException">
+            <message>
+              <![CDATA[The provided search context cannot be null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException: The provided search context cannot be null
+at com.google.common.base.Preconditions.checkNotNull(Preconditions.java:924)
+at io.appium.java_client.pagefactory.AppiumFieldDecorator.requireWebDriverReference(AppiumFieldDecorator.java:129)
+at io.appium.java_client.pagefactory.AppiumFieldDecorator.<init>(AppiumFieldDecorator.java:86)
+at io.appium.java_client.pagefactory.AppiumFieldDecorator.<init>(AppiumFieldDecorator.java:100)
+at com.appiumtesting.pageobject.FormPageObject.<init>(FormPageObject.java:24)
+at com.appiumtesting.DataFromJson.formPageUsingDataProvider(DataFromJson.java:22)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- formPageUsingDataProvider -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.appiumtesting.DataFromJson@52c3cb31]" started-at="2024-04-16T12:03:32 IST" name="tearDown" finished-at="2024-04-16T12:03:35 IST" duration-ms="3347" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.appiumtesting.DataFromJson -->
+    </test> <!-- Data from Json -->
+  </suite> <!-- Suite -->
+</testng-results>
